@@ -8,7 +8,7 @@ The particle filter is similar to the Kalman filter in structure, however instea
 ### How the program works
 This program reads in a file of data of three columns: actual position, actual velocity, and sensor reading.
 
-The system outlined consists of a 1 Dimensional position moving in a line, where the data is recorded from two magnets
+The system outlined consists of a 1 Dimensional position moving in a line, where the data is recorded from two magnets. Utilizing a series of predict-update equations, we average the estimation of all the particles to determine the next state derivied from probability distributions.
 
 ### Results
 Below represents a graphical representation of the output of the particle filter. The red line shows the estimation of our particle filter agaist the actual data plotted in gray. We can that, over time, the filter's use of particle sets provides a very accurate estimation of varied sinusoidal measurement data in a given system.
